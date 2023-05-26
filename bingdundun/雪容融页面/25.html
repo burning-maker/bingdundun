@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="CSS/333.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../iconfont/iconfont.css" />
+  <link rel="stylesheet" href="../导航栏/111.css">
+  <title>轮椅冰壶</title>
+
+  <style>
+    .a {
+      height: 550px;
+      width: 100%;
+      position: relative;
+      perspective: 1600px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .b {
+      width: 400px;
+      height: 300px;
+      position: absolute;
+      transform-style: preserve-3d;
+      animation: a 10s infinite cubic-bezier(0.7, 0, 0.17, 1);
+    }
+
+    .b div {
+      position: absolute;
+      background-size: cover;
+      opacity: 0.9;
+      width: 400px;
+      height: 300px;
+      transform: rotateY(calc(var(--i) * 72deg)) translateZ(600px);
+    }
+
+    @keyframes a {
+      0% {
+        transform: translateZ(-100px) rotateY(0);
+      }
+
+      20% {
+        transform: translateZ(-100px) rotateY(-72deg);
+      }
+
+      40% {
+        transform: translateZ(-100px) rotateY(-144deg);
+      }
+
+      60% {
+        transform: translateZ(-100px) rotateY(-216deg);
+      }
+
+      80% {
+        transform: translateZ(-100px) rotateY(-288deg);
+      }
+
+      100% {
+        transform: translateZ(-100px) rotateY(-360deg);
+      }
+    }
+
+    .c {
+      background-image: url("image/开幕式.png");
+      background-size: cover;
+    }
+
+    .d {
+      background-image: url("image/冰墩墩雪融容.jpg");
+      background-size: cover;
+    }
+
+    .e {
+      background-image: url("image/雪花.jpg");
+      background-size: cover;
+    }
+
+    .f {
+      background-image: url("image/logo.jpg");
+      background-size: cover;
+    }
+
+    .g {
+      background-image: url("image/闭幕式.jpg");
+      background-size: cover;
+    }
+
+    .menu li:last-of-type {
+      border: 1px white solid;
+      height: 40px;
+      line-height: 40px;
+      position: absolute;
+      left: -500px;
+      top: -10px;
+      background-color: rgb(126, 215, 242, 0.8);
+      transition: 0.5s;
+    }
+
+    .menu li:last-of-type:hover {
+      transform: scale(1.1);
+    }
+
+    .menu li:nth-of-type(2) a {
+
+      color: red;
+      border-bottom: 1px red solid;
+    }
+
+    .select-img ul li:nth-of-type(6) .mask {
+      top: 0px;
+    }
+  </style>
+</head>
+<div class="outer">
+
+  <body>
+    <nav class="nav">
+      <input type="checkbox" id="menu_btn">
+      <label for="menu_btn" class="menu-btn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </label>
+      <div class="wrapper">
+        <ul class="menu">
+          <li><a href="../video-background.html">首页</a></li>
+          <li><a href="../雪容融页面/21.html">项目</a></li>
+          <li><a href="../滚动/残奥.html">运动健儿</a></li>
+          <li><a href="../社区打卡/community.html">社区打卡</a></li>
+          <li><a href="#">用户反馈</a></li>
+          <li><a href="../框架1-4/1.html" title="点击了解冬奥会">冬奥会</a>
+        </ul>
+      </div>
+    </nav>
+    <div class="a">
+      <div class="b">
+        <div class="c" style="--i: 0"></div>
+        <div class="d" style="--i: 1"></div>
+        <div class="e" style="--i: 2"></div>
+        <div class="f" style="--i: 3"></div>
+        <div class="g" style="--i: 4"></div>
+      </div>
+      <div id="here"></div>
+    </div>
+
+    <section class="select-img">
+      <ul>
+        <li>
+          <img src="雪容融图片/残奥冬季两项.jpg" />
+          <div class="mask">
+            <a href="21.html#here">
+              <p>残奥冬季两项</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <img src="雪容融图片/残奥冰球.jpg" />
+          <div class="mask">
+            <a href="24.html#here">
+              <p>残奥冰球</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <img src="雪容融图片/残奥单板滑雪.jpg" />
+          <div class="mask">
+            <a href="26.html#here">
+              <p>残奥单板滑雪</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <img src="雪容融图片/残奥越野滑雪.jpg" />
+          <div class="mask">
+            <a href="22.html#here">
+              <p>残奥越野滑雪</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <img src="雪容融图片/残奥高山滑雪.jpg" />
+          <div class="mask">
+            <a href="23.html#here">
+              <p>残奥高山滑雪</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <img src="雪容融图片/轮椅冰壶.jpg" />
+          <div class="mask">
+            <a href="25.html#here">
+              <p>轮椅冰壶</p>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="center">
+      <!-- 项目介绍 -->
+      <span>项目介绍:</span>
+      <div class="box" id="intro-box">
+        <div class="glass"></div>
+        <div class="content">
+          <h2><img src="image/轮椅冰壶.png" style="padding-top: 20px" /></h2>
+          <p style="padding-top: 30px; text-indent: 25px">
+            轮椅冰壶（Wheelchair
+            curling）是一项冰上运动，在2006年都灵冬季残奥会成为奥运比赛项目。
+            轮椅冰壶比赛共8局，运动员必须坐在轮椅上进行比赛，采用和普通冰壶一样的规则，差别仅在于轮椅冰壶比赛没有刷冰，且投壶者必需在固定的轮椅上掷壶，除了可以用手掷壶外，还可以用投掷杆挂住壶的上方来掷壶。
+            轮椅冰壶的最高国际、国内组织机构分别是世界冰壶联合会、中国冰壶协会。
+          </p>
+        </div>
+      </div>
+
+      <span>精彩瞬间:</span>
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/paralympics/wog.htm?cmsid=EYS2022041000184700" target="_blank">
+          <div class="content">
+            <h2><img src="image/251.webp" /></h2>
+            <p>
+              梅花香自苦寒来——记获得“北京冬奥会、冬残奥会突出贡献集体”称号的国家轮椅冰壶队
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/paralympics/wog.htm?cmsid=EYS2022031300155800" target="_blank">
+          <div class="content">
+            <h2><img src="image/252.webp" /></h2>
+            <p>中国队成功卫冕 老牌强队夺牌——北京冬残奥会轮椅冰壶综述</p>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/paralympics/wog.htm?cmsid=EYS2022031205130200" target="_blank">
+          <div class="content">
+            <h2><img src="image/253.webp" /></h2>
+            <p>中国队获得北京冬残奥会轮椅冰壶冠军</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/paralympics/wog.htm?cmsid=EYS2022031205000500" target="_blank">
+          <div class="content">
+            <h2><img src="image/254.webp" /></h2>
+            <p>我与冬残奥的故事：轮椅冰壶运动员陈建新与苦难冰上“博弈”</p>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/paralympics/wog.htm?cmsid=EYS2022031102792100" target="_blank">
+          <div class="content">
+            <h2><img src="image/255.webp" /></h2>
+            <p>中国轮椅冰壶队豪取9连胜晋级决赛 岳清爽赛前为队员高歌</p>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/paralympics/wog.htm?cmsid=EYS2022031000373300" target="_blank">
+          <div class="content">
+            <h2><img src="image/256.webp" /></h2>
+            <p>轮椅冰壶循环赛：中国队赢挪威队</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </body>
+</div>
+
+</html>

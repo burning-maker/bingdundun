@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.showcase{
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    right: 0px;
+    transition: 0.5s;
+
+}
+
+.showcase.active {
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    right: 300px;
+    transition: 0.5s;
+    
+}
+
+
+
+.showcase header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 90px;
+    z-index: 999;
+}
+
+.logo .iconfont {
+    font-size: 70px;
+    color: rgb(206, 0, 0);
+}
+
+.toggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-image: url(./图片图标/首页三条线.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.toggle.active{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-image: url(./图片图标/差号.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 30px;
+    cursor: pointer;
+}
+
+
+
+.text {
+    position: relative;
+    font-family: "宋体";
+
+}
+
+.text h2 {
+    font-size: 4em;
+    font-weight: 800;
+    line-height: 1.1em;
+}
+
+.text h3 {
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1.1em;
+}
+
+.text p {
+    font-size: 1.1em;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.text a {
+    width: 180px;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fff;
+    color: #111;
+    padding: 10px 20Px;
+    margin-top: 10px;
+    border-radius: 12px;
+    display: block;
+    transition: 0.5s;
+}
+
+.text a:hover {
+    width: 240px;
+    letter-spacing: 6px;
+}
+
+.log_on {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log_on li {
+    list-style-type: none;
+    float: left;
+    margin-left: 20px;
+    transition: 0.4s;
+}
+
+.log_on a i {
+    width: 100%;
+    display: inline-block;
+    font-size: 30px;
+    color: white;
+}
+
+.log_on li:hover {
+    list-style-type: none;
+    float: left;
+    margin-left: 20px;
+    transform: translateY(-15px);
+}
+
+.video-background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.video-background source {
+    width: 100%;
+    height: 100%;
+}
+
+.overflay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(54, 54, 87);
+    mix-blend-mode: overlay;
+}
+
+.muea {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 300px;
+    min-height: 100vh;
+    /* border: 1px red solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.muea li {
+    list-style-type: none;
+    text-align: center;
+
+}
+
+.muea li a {
+   
+    line-height: 50px;
+    font-size: 25px;
+    font-family: "宋体";
+    font-weight: 800;
+    color: black;
+}
+
+.muea a:hover {
+    color: rgb(253, 1, 48);
+}
+
+/*设置一下登录页面*/
+
+/* .buttom-close{
+    display: inline-block;
+    font-size: 25px;
+    color:#fff;
+    position: absolute;
+    right:12px;
+    top:12px;
+    background-size: cover;
+    transition: 0.5s;
+}
+.buttom-close:hover{
+    font-size: 30px;
+    cursor: pointer;
+} */
+
+
+/*设置屏幕比较小的情况下，页面的比例*/
+/*设置屏幕小与910px的时候，调整一下位置*/
+@media (max-width:991px) {
+
+    .showcase.active,
+    .showcase header {
+        padding: 40px;
+    }
+
+    .text h2 {
+        font-size: 3em;
+    }
+
+    .text h3 {
+        font-size: 2em;
+    }
+
+    .text p {
+        font-size: 1em;
+        max-width: 550px;
+    }
+
+    .text a {
+        width: 165px;
+        padding: 10px;
+    }
+
+    .text a:hover {
+        width: 230px;
+    }
+
+    .showcase.active{
+        right: 200px;
+    }
+
+    .muea {
+        width: 200px;
+    }
+
+    .muea li a {
+        line-height: 40px;
+        font-size: 20px;
+        font-family: "宋体";
+        font-weight: 800;
+        color: black;
+    }
+
+}

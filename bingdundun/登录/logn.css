@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    z-index: -999;
+}
+
+.wrap.active {
+    position: relative;
+    right: 300px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px red solid; */
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.wrap {
+    position: relative;
+    right: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px red solid; */
+    transition: 0.5s;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.wrap.show {
+    position: relative;
+    right: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px red solid; */
+    transition: 0.5s;
+    z-index: 800;
+    background-color: rgb(236, 236, 236, 0.8);
+}
+
+.wrap .form {
+    position: relative;
+    border: 1px solid yellow;
+    width: 950px;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: none;
+    box-shadow: 5.25px 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.wrap .form.active {
+    position: relative;
+    border: 1px solid yellow;
+    width: 600px;
+    height: 450px;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 5.25px 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+
+.wrap .form .left {
+    width: 60%;
+    height: auto;
+}
+
+.wrap .form .left video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrap .form .right {
+    width: 40%;
+    height: auto;
+    background: rgba(255, 255, 255, .9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+.wrap .form .right .right-con {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form .right .right-con h1 {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+.form .right .right-con h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.form .right .right-con .test {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #366ae6;
+    background: rgba(0, 0, 0, 0);
+}
+
+.form .right .right-con .btn {
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    background-image: linear-gradient(120deg, #76daec 0%, #c5a8de 100%);
+}
+
+.form .right .right-con .btn:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.buttom-close {
+    width: 28px;
+    height: 28px;
+    background-image: url(../图片图标/关闭.png);
+    background-size: cover;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    transition: 0.3s;
+}
+
+.buttom-close:hover {
+    width: 30px;
+    height: 30px;
+    background-image: url(../图片图标/关闭2.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+/*设置屏幕小的状态*/
+@media (max-width:991px) {
+    .wrap {
+        right: 0px;
+    }
+
+    .wrap.active {
+        right: 200px;
+    }
+
+    .wrap .form.active {
+        width: 500px;
+        height: 360px;
+        border: 1px green solid;
+
+    }
+
+    .wrap.active .form {
+        width: 500px;
+        height: 360px;
+        border: 1px green solid;
+    }
+
+    .wrap .form .left {
+        width: 300px;
+        height: 360px;
+    }
+
+    .wrap .form .right {
+        width: 200px;
+        height: 360px;
+    }
+
+    .form .right .right-con h1 {
+        font-size: 20px;
+    }
+
+    .form .right .right-con h3 {
+        font-size: 12px;
+    }
+
+
+    .form .right .right-con .btn {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .buttom-close {
+        width: 20px;
+        height: 20px;
+    }
+
+    .buttom-close:hover {
+        width: 22px;
+        height: 22px;
+        background-image: url(../图片图标/关闭2.png);
+        background-size: cover;
+        cursor: pointer;
+    }
+}

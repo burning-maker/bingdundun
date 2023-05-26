@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./输入框.css">
+</head>
+
+<body>
+    <div class="get">
+        <textarea name="" cols="40" rows="4" id="txt"></textarea>
+        <button type="button" id="get-btn">发布</button>
+        <ul id="box">
+        </ul>
+        <script type="text/javascript">
+            document.getElementById("get-btn").onclick = function () {
+                var txtx = document.getElementById("txt").value;
+                if (txtx.trim() == '') {
+                    alert('你没有输入内容');
+                    return false;
+                }
+                var li = document.createElement("li");
+
+                box.insertBefore(li, box.firstChild);
+                li.innerHTML = txtx + "<a href='javascript:' id='a'> 删除</a>";
+                document.getElementById("txt").value = '';
+                document.getElementById("a").onclick = function () {
+                    box.removeChild(li);
+                }
+            }
+        </script>
+    </div>
+    <div class="get">
+        <textarea name="" cols="40" rows="4" id="txt2"></textarea>
+        <button type="button" id="get-btn2">发布</button>
+        <ul id="box2">
+        </ul>
+        <script type="text/javascript">
+            document.getElementById("get-btn2").onclick = function () {
+                var txtx = document.getElementById("txt2").value;
+                if (txtx.trim() == '') {
+                    alert('你没有输入内容');
+                    return false;
+                }
+                var li = document.createElement("li");
+
+                box2.insertBefore(li, box2.firstChild);
+                li.innerHTML = txtx + "<a href='javascript:' id='a2'> 删除</a>";
+                document.getElementById("txt2").value = '';
+                document.getElementById("a2").onclick = function () {
+                    box2.removeChild(li);
+                }
+            }
+        </script>
+    </div>
+    <div class="get">
+        <textarea name="" cols="40" rows="2" id="txt3"></textarea>
+        <button type="button" id="get-btn3">发布</button>
+        <ul id="box3">
+        </ul>
+        <script type="text/javascript">
+            document.getElementById("get-btn3").onclick = function () {
+                var txtx = document.getElementById("txt3").value;
+                if (txtx.trim() == '') {
+                    alert('你没有输入内容');
+                    return false;
+                }
+                var li = document.createElement("li");
+
+                box3.insertBefore(li, box3.firstChild);
+                li.innerHTML = txtx + "<a href='javascript:' id='a3'> 删除</a>";
+                document.getElementById("txt3").value = '';
+                document.getElementById("a3").onclick = function () {
+                    box3.removeChild(li);
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>

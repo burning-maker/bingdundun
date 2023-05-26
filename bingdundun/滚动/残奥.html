@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./滚动.css">
+    <link rel="stylesheet" href="../导航栏/111.css">
+    <style>
+        .test .title h3 span {
+            /* padding-top: 20px;
+            display: inline-block;
+            border-radius: 50px;
+             height: 50px;
+            line-height: 30px; */
+            background-color: rgb(249, 234, 238);
+        }
+
+        .menu li:last-of-type {
+            border: 1px white solid;
+            height: 40px;
+            line-height: 40px;
+            position: absolute;
+            left: -500px;
+            top: -10px;
+            background-color: rgb(126, 215, 242, 0.8);
+            transition: 0.5s;
+        }
+
+        .menu li:last-of-type:hover {
+
+            transform: scale(1.1);
+        }
+
+        .menu li:nth-of-type(3) a {
+
+            color: red;
+            border-bottom: 1px red solid;
+        }
+
+        body {
+            width: 100%+20px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="menu_btn">
+    <label for="menu_btn" class="menu-btn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </label>
+    <div class="wrapper">
+        <ul class="menu">
+            <li><a href="../video-background.html">首页</a></li>
+            <li><a href="../雪容融页面/21.html">项目</a></li>
+            <li><a href="../滚动/冬奥.html">运动健儿</a></li>
+            <li><a href="../社区打卡/community.html">社区打卡</a></li>
+            <li><a href="#">用户反馈</a></li>
+            <li><a href="./冬奥.html" title="点击查看冬奥会">冬奥会</a></li>
+        </ul>
+    </div>
+    <div class="shell">
+
+        <div class="image" style="background-image: url('./图片/11.jpg');">
+
+        </div>
+        <div class="heading">
+            <h1><span>第1金:</span>
+                刘子旭
+            </h1>
+
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/雪容融.jpg" alt="">
+                    <span> 冬季两项男子短距离（坐姿组） </span>
+
+                    <br>
+                    <p>3月5日，在北京冬残奥会冬季两项男子短距离坐姿比赛中，中国队选手刘子旭获得金牌，为中国冬残奥代表团夺得本届冬残奥会首枚金牌，刘梦涛获得铜牌。</p>
+                </h3>
+
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/12.jpg');"> </div>
+        <div class="heading">
+            <h1>
+                <span>第2金:</span>
+                郭雨洁
+            </h1>
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/雪容融.jpg" alt="">
+                    <span>冬季两项女子短距离（站姿组） </span>
+
+                    <br>
+                    <p>5日，在北京冬残奥会冬季两项女子短距离站姿比赛中，中国队选手郭雨洁夺得金牌。</p>
+                </h3>
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/13.jpg');"> </div>
+        <div class="heading">
+            <h1>
+                <span>第3金:</span>
+                张梦秋
+            </h1>
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/雪容融.jpg" alt=""><span>高山滑雪女子超级大回转（站姿组）</span>
+
+                    <br>
+                    <p>在北京冬残奥会女子超级大回转-站姿比赛中，中国队选手张梦秋获得金牌！</p>
+                </h3>
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/14.jpg');"> </div>
+        <div class="heading">
+            <h1>
+                <span>第4金:</span>
+                郑鹏
+            </h1>
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/雪容融.jpg" alt=""><span>越野滑雪男子长距离（坐姿组）</span>
+
+                    <br>
+                    <p>在越野滑雪男子长距离坐姿组比赛中，中国队选手郑鹏和毛忠武包揽金银牌，杜天获得第四名！</p>
+                </h3>
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/15.jpg');"> </div>
+        <div class="heading">
+            <h1>
+                <span>第5金:</span>
+                杨洪洁
+
+            </h1>
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/雪容融.jpg" alt=""><span>越野滑雪女子长距离（坐姿组）</span>
+
+                    <br>
+                    <p>在北京冬残奥会越野滑雪女子长距离坐姿组比赛中，中国队选手杨洪琼获得金牌！</p>
+                </h3>
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/16.jpg');"> </div>
+        <div class="heading">
+            <h1>
+                <span>第6金:</span>
+                梁景怡
+            </h1>
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/雪容融.jpg" alt=""><span>高山滑雪男子超级大回转（站姿组）</span>
+
+                    <br>
+                    <p>2月15日下午，北京冬奥会单板滑雪男子大跳台决赛，中国小将、从吉林省走出去的运动员苏翊鸣获得金牌。这是中国首次夺得该项目的冬奥会金牌！刷新冬奥会史上最佳战绩！</p>
+                </h3>
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/17.jpg');"> </div>
+        <div class="heading">
+            <h1>
+                <span> 第7金:</span>
+                纪立家
+            </h1>
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/雪容融.jpg" alt=""><span>单板滑雪男子障碍追逐（UL级）</span>
+
+                    <br>
+                    <p>北京冬残奥会残奥单板滑雪男子障碍追逐-UL级比赛中，中国选手纪立家获得冠军，王鹏耀、朱永钢分获第二、三名张义琦获得第四名。</p>
+                </h3>
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/18.jpg');"> </div>
+        <div class="heading">
+            <h1>
+                <span>第8金:</span>
+                刘梦涛
+
+            </h1>
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/雪容融.jpg" alt=""><span>冬季两项男子中距离（坐姿组）</span>
+
+                    <br>
+                    <p>在北京冬残奥会残奥冬季两项男子中距离坐姿比赛中，中国队选手刘梦涛获得金牌！目前，中国代表团已获得8金8银10铜暂列奖牌榜第一。</p>
+                </h3>
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/19.jpg');"> </div>
+        <div class="heading">
+            <h1>
+                <span>第9金:</span>
+                郑鹏
+            </h1>
+
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/雪容融.jpg" alt=""><span>越野滑雪男子短距离（坐姿组）</span>
+
+                    <br>
+                    <p>3月9日，中国选手郑鹏在北京冬残奥会越野滑雪男子短距离坐姿组比赛中获得金牌！</p>
+                </h3>
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/20.jpg');"> </div>
+        <div class="heading">
+            <h1>
+                <span>第10金:</span>
+                杨洪琼
+            </h1>
+
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/雪容融.jpg" alt=""><span>越野滑雪女子短距离（坐姿组）</span>
+
+                    <br>
+                    <p>3月9日，中国选手杨洪琼在北京冬残奥会越野滑雪女子短距离坐姿组比赛中获得金牌。</p>
+                </h3>
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/21.jpg');"> </div>
+        <div class="heading">
+            <h1>
+                <span>第11金:</span>
+                刘梦涛
+            </h1>
+
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/雪容融.jpg" alt=""><span>冬季两项男子长距离（坐姿组）</span>
+
+                    <br>
+                    <p>中国选手单怡霖在北京冬残奥会残奥冬季两项女子长距离坐姿组比赛中为中国队再添一枚铜牌。约半小时后残奥冬季两项男子长距离坐姿组比赛中，中国选手刘梦涛摘得金牌！这是他本次冬残奥会上个人第二枚金牌！中国选手刘子旭摘铜。
+                    </p>
+                </h3>
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/22.jpg');">
+            <div class="overflay"></div>
+        </div>
+        <div class="heading">
+            <h1>
+                <span>第12金:</span>
+                张梦秋
+            </h1>
+
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/雪容融.jpg" alt=""><span>高山滑雪女子大回转（站姿组）</span>
+
+                    <br>
+                    <p>中国选手张梦秋又获得金牌！这也是她在本届冬残奥会上获得的第四枚奖牌。</p>
+                </h3>
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/23.jpg');"> </div>
+        <div class="heading">
+            <h1>
+                <span>第13金:</span>
+                武中伟
+            </h1>
+
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/雪容融.jpg" alt=""><span>单板滑雪男子坡面回转（LL1级）</span>
+
+                    <br>
+                    <p>在北京冬残奥会残奥单板滑雪男子坡面回转-LL1级比赛中，中国选手武中伟获得金牌！这是他在本届冬残奥会上的第二枚奖牌</p>
+                </h3>
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/24.jpg');"> </div>
+        <div class="heading">
+            <h1>
+                <span>第14金:</span>
+                孙奇
+            </h1>
+
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/雪容融.jpg" alt=""><span>单板滑雪男子坡面回转（LL2级）</span>
+
+                    <br>
+                    <p>在在北京冬残奥会残奥单板滑雪男子坡面回转-LL2级比赛中，中国选手孙奇夺得金牌！</p>
+                </h3>
+            </div>
+        </div>
+        <div class="image" style="background-image: url('./图片/25.jpg');"> </div>
+        <div class="heading">
+            <h1>
+                <span>第15金:</span>
+                王晨阳
+            </h1>
+
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/雪容融.jpg" alt=""><span>越野滑雪男子中距离（自由技术-站姿组）</span>
+
+                    <br>
+                    <p>在残奥越野滑雪男子中距离（自由技术）站姿比赛中，中国选手王晨阳获得冠军！蔡佳云获得铜牌！俩人均为“00后”运动员！
+
+                    </p>
+                </h3>
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/26.jpg');"> </div>
+        <div class="heading">
+            <h1>
+                <span>第16金:</span>
+                毛忠武
+            </h1>
+
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/雪容融.jpg" alt=""><span>越野滑雪男子中距离（坐姿组）</span>
+
+                    <br>
+                    <p>在残奥越野滑雪男子中距离坐姿项目比赛中，中国选手毛忠武夺得冠军，郑鹏获得银牌。</p>
+                </h3>
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/27.jpg');"> </div>
+        <div class="heading">
+            <h1>
+                <span>第17金:</span>
+                杨洪琼
+            </h1>
+
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/雪容融.jpg" alt=""><span>越野滑雪女子中距离（坐姿组）</span>
+
+                    <br>
+                    <p>在北京冬残奥会残奥越野滑雪女子中距离坐姿项目比赛中，中国选手杨洪琼夺得金牌！这样她便收获了本届冬残奥会残奥越野滑雪女子坐姿组别短距离、中距离和长距离全部3个项目的冠军！</p>
+                </h3>
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/28.jpg');"> </div>
+        <div class="heading">
+            <h1>
+                <span>第18金:</span>
+                孙玉龙 闫卓 张明亮 陈建新 王海涛
+            </h1>
+
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/雪容融.jpg" alt=""><span>轮椅冰壶</span>
+
+                    <br>
+                    <p>在北京冬残奥会轮椅冰壶决赛中，中国队以8-3战胜实力强劲的瑞典队夺冠！继2018年平昌冬残奥会摘金后，成功实现卫冕。为中国代表团斩获本届冬残奥会上的第18枚金牌！</p>
+                </h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

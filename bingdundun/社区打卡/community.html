@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社区</title>
+    <link rel="stylesheet" href="./community.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="../导航栏/111.css">
+    <link rel="stylesheet" href="./输入框.css">
+    <style>
+        .menu li:last-of-type:hover {
+            transform: scale(1.1);
+        }
+
+        .menu li:nth-of-type(4) a {
+            color: red;
+            border-bottom: 1px red solid;
+        }
+
+        .sport-list li:nth-of-type(1) .text h3 {
+            color: red;
+            /* border-bottom: 1px red solid; */
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="menu_btn">
+    <label for="menu_btn" class="menu-btn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </label>
+    <div class="wrapper">
+        <ul class="menu">
+            <li><a href="../video-background.html">首页</a></li>
+            <li><a href="../框架1-4/1.html">项目</a></li>
+            <li><a href="../滚动/冬奥.html">运动健儿</a></li>
+            <li><a href="../社区打卡/community.html">社区打卡</a></li>
+            <li><a href="#">用户反馈</a></li>
+        </ul>
+    </div>
+    <section class="video-top box2">
+        <div class="over"></div>
+        <video autoplay loop class="video-background" muted plays-inline>
+            <source src="./视频背景2.mp4">
+        </video>
+        <h1>冰雪运动社区</h1>
+        <h3>运动，强身健体！</h3>
+        <p>我和冰雪运动有个约,和奥运冠军一起打卡</p>
+    </section>
+    <section class="outer">
+        <div class="left">
+            <div class="nav-left box1">
+                看看冠军
+            </div>
+            <ul class="show">
+                <li class="box1">
+                    <div class="show-top">
+                        <img src="./社区图片/谷爱凌头像.jpg" alt="">
+                        <span class="name">青蛙公主爱凌</span>
+                        <span class="data">22-2-22 15：56</span>
+                    </div>
+                    <div class="write">
+                        我一直说我希望成为自由式滑雪运动的大使并通过打破界限和记录搭建桥梁，我很自豪地说我度过了人生中最美好的两周，充满了快乐、挑战，鼓力和爱、也经历了不可估量的成长，并成为：
+                        历史上最年轻的自由滑雪奥运金牌得主。<br>
+                        第一位在同一届奥运会上获得三枚奖牌的极限运动员
+                        唯一一位赢得“大满贯”（世界杯、xgames、世界锦标赛和奥运会）的自由式滑雪女运动员
+                        中国历史上第一位奥运会自由滑雪金牌和奖牌得主
+                        感谢我的妈妈、家人和朋友们，教练和赞助商对我的支持，也感谢所有参加比赛的女孩们，她们不仅挑战极限，而且还带着微笑，友谊和体育精神做到了这一点。你们每天都在激励着我，我很幸运能够成为这个了不起的大家庭的一员。最后，感谢你
+                        - 自由式滑雪运动！<br>
+                        另外：感谢说想我的朋友们，我在北京啊<br>
+                    </div>
+                    <div class="img">
+                        <img src="./社区图片/谷爱凌.jpg" alt="">
+                    </div>
+                    <i class="iconfont icon-icon" id="icon1" onclick="ac()"><span>点赞</span></i>
+                    <i class="iconfont icon-pinglun" id="icon2" onclick="aw()"><span>评论</span></i>
+                    <i class="iconfont icon-fenxiang" id="icon3"><span>分享</span></i>
+                    <i class="iconfont icon-keaide" id="icon4"></i>
+                    <div class="get">
+                        <textarea name="" cols="40" rows="2" id="txt"></textarea>
+                        <button type="button" id="get-btn">发布</button>
+                        <ul id="box">
+                        </ul>
+                        <script type="text/javascript">
+                            function ac() {
+                                document.querySelector('#icon4').classList.toggle('active')
+                                document.querySelector('#icon1').classList.toggle('active')
+                            }
+                            function aw() {
+                                document.querySelector('#icon2').classList.toggle('active')
+
+                            }
+                            document.getElementById("get-btn").onclick = function () {
+                                var txtx = document.getElementById("txt").value;
+                                if (txtx.trim() == '') {
+                                    alert('你没有输入内容');
+                                    return false;
+                                }
+                                var li = document.createElement("li");
+
+                                box.insertBefore(li, box.firstChild);
+                                li.innerHTML = txtx + "<a href='javascript:' id='a'> 删除</a>";
+                                document.getElementById("txt").value = '';
+                                document.getElementById("a").onclick = function () {
+                                    box.removeChild(li);
+                                }
+                            }
+                        </script>
+                    </div>
+                </li>
+                <li class="box1">
+                    <div class="show-top">
+                        <img src="./社区图片/羽生结弦头像.jpg" alt="">
+                        <span class="name">羽生结弦station</span>
+                        <span class="data">22-2-22 15：56</span>
+                    </div>
+                    <div class="write">
+                        老实说，我觉得我把一切都发挥出来了，真的，没有任何保留，从最开始就火力全开，4A也好好做到收紧，为了成功完成去进行了挑战，那就已经是我的财产了。<br>
+                    </div>
+                    <div class="img">
+                        <img src="./社区图片/羽生结弦.jpg" alt="">
+                    </div>
+                    <i class="iconfont icon-icon" id="icon5" onclick="ac2()"><span>点赞</span></i>
+                    <i class="iconfont icon-pinglun" id="icon6" onclick="aw2()"><span>评论</span></i>
+                    <i class="iconfont icon-fenxiang" id="icon7"><span>分享</span></i>
+                    <i class="iconfont icon-keaide" id="icon8"></i>
+
+                    <script type="text/javascript">
+                        function ac2() {
+                            document.querySelector('#icon8').classList.toggle('active')
+                            document.querySelector('#icon5').classList.toggle('active')
+                        }
+                        function aw2() {
+                            document.querySelector('#icon6').classList.toggle('active')
+
+                        }
+                    </script>
+                    <div class="get">
+                        <textarea name="" cols="40" rows="2" id="txt2"></textarea>
+                        <button type="button" id="get-btn2">发布</button>
+                        <ul id="box2">
+                        </ul>
+                        <script type="text/javascript">
+                            document.getElementById("get-btn2").onclick = function () {
+                                var txtx = document.getElementById("txt2").value;
+                                if (txtx.trim() == '') {
+                                    alert('你没有输入内容');
+                                    return false;
+                                }
+                                var li = document.createElement("li");
+
+                                box2.insertBefore(li, box2.firstChild);
+                                li.innerHTML = txtx + "<a href='javascript:' id='a2'> 删除</a>";
+                                document.getElementById("txt2").value = '';
+                                document.getElementById("a2").onclick = function () {
+                                    box2.removeChild(li);
+                                }
+                            }
+                        </script>
+                    </div>
+                </li>
+                <li class="box1">
+                    <div class="show-top">
+                        <img src="./社区图片/范可欣头像.jpg" alt="">
+                        <span class="name">范可新[超话]</span>
+                        <span class="data">22-2-22 15：56</span>
+                    </div>
+                    <div class="write">
+                        回溯记忆，我清晰地记得滑过索契冬奥会，又熬过了平昌冬奥会的经历，我一直在反复自问自答，今天我终于等到了答案，在家门口进行的北京冬奥会上，我终于实现了梦想，站上了最高领奖台，戴上了冬奥会金牌，就像我之前说过的，我始终相信队伍，也始终坚定自己的信念，一金一铜，我很满意自己的表现。感谢所有支持我的人，接下来还有1500米比赛，姑娘们比赛加油，5000米男子接力，小伙子们加油，我会在场边等着你们胜利归来。<br>
+                    </div>
+                    <div class="img">
+                        <img src="./社区图片/范可欣.jpg" alt="">
+                    </div>
+                    <i class="iconfont icon-icon" id="icon9" onclick="ac3()"><span>点赞</span></i>
+                    <i class="iconfont icon-pinglun" id="icon10" onclick="aw3()"><span>评论</span></i>
+                    <i class="iconfont icon-fenxiang" id="icon11"><span>分享</span></i>
+                    <i class="iconfont icon-keaide" id="icon12"></i>
+                    <script type="text/javascript">
+                        function ac3() {
+                            document.querySelector('#icon12').classList.toggle('active')
+                            document.querySelector('#icon9').classList.toggle('active')
+                        }
+                        function aw3() {
+                            document.querySelector('#icon10').classList.toggle('active')
+
+                        }
+                    </script>
+                    <div class="get">
+                        <textarea name="" cols="40" rows="2" id="txt3"></textarea>
+                        <button type="button" id="get-btn3">发布</button>
+                        <ul id="box3">
+                        </ul>
+                        <script type="text/javascript">
+                            document.getElementById("get-btn3").onclick = function () {
+                                var txtx = document.getElementById("txt3").value;
+                                if (txtx.trim() == '') {
+                                    alert('你没有输入内容');
+                                    return false;
+                                }
+                                var li = document.createElement("li");
+
+                                box3.insertBefore(li, box3.firstChild);
+                                li.innerHTML = txtx + "<a href='javascript:' id='a3'> 删除</a>";
+                                document.getElementById("txt3").value = '';
+                                document.getElementById("a3").onclick = function () {
+                                    box3.removeChild(li);
+                                }
+                            }
+                        </script>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="right">
+            <div class="nav-right box">
+                热门论坛
+                <a href="">更多</a>
+            </div>
+            <ul class="sport-list">
+                <li class="box"><a href="./community.html">
+                        <img src="./社区图片/冬奥会背景.jpg" alt="">
+                        <div class="text">
+                            <h3>冬奥社区</h3>
+                            <p>运动爱好者请进</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="box"><a href="./community2.html">
+                        <img src="./社区图片/残奥会背景.jpg" alt="">
+                        <div class="text">
+                            <h3>残奥社区</h3>
+                            <p>运动爱好者请进</p>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+    <script>
+
+        //1.拥有所有的box1
+        let boxlist = document.querySelectorAll('.box1')
+        let boxlist2 = document.querySelectorAll('.box')
+        //2.监听滚动
+        window.addEventListener('scroll', scrollLoad)
+        //3.滚动加载函数
+        function scrollLoad() {
+            //1.定义一个目标值
+            let taggerValue = window.innerHeight * 0.85
+            //2.获取每一个box1距离浏览器顶部的值
+            boxlist.forEach(box => {
+                let boxTop = box.getBoundingClientRect().top
+                if (boxTop <= taggerValue) {
+                    box.classList.add('show-center')
+                } else {
+                    box.classList.remove('show-center')
+                }
+            })
+            let taggerValue1 = window.innerHeight * 0.85
+            boxlist2.forEach(box => {
+                let boxTop = box.getBoundingClientRect().top
+                if (boxTop <= taggerValue1) {
+                    box.classList.add('show-center')
+                } else {
+                    box.classList.remove('show-center')
+                }
+
+            })
+        }
+        // //写导航条监听滚动
+        // document.onscroll=function(event){
+        //     var ss=event.path[l].scrollY
+        //     var nav=document.getElementsByClassName('.nav')
+        //     if(Math.round(ss)>0)
+        //     {
+        //         nav.classList.add('turn')
+        //     }
+        // }
+
+    </script>
+</body>
+
+</html>

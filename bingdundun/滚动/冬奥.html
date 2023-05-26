@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./滚动.css">
+    <link rel="stylesheet" href="../导航栏/111.css">
+    <style>
+        .test .title h3 span {
+            /* padding-top: 20px;
+            display: inline-block;
+            border-radius: 50px;
+             height: 50px;
+            line-height: 30px; */
+            background-color: rgb(232, 249, 255);
+        }
+
+        .menu li:last-of-type {
+            border: 1px white solid;
+            height: 40px;
+            line-height: 40px;
+            position: absolute;
+            left: -500px;
+            top: -10px;
+            background-color: rgb(126, 215, 242, 0.8);
+            transition: 0.5s;
+        }
+
+        .menu li:last-of-type:hover {
+            transform: scale(1.1);
+        }
+
+        .menu li:nth-of-type(3) a {
+
+            color: red;
+            border-bottom: 1px red solid;
+        }
+
+        body {
+            width: 100%+20px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="menu_btn">
+    <label for="menu_btn" class="menu-btn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </label>
+    <div class="wrapper">
+        <ul class="menu">
+            <li><a href="../video-background.html">首页</a></li>
+            <li><a href="../框架1-4/1.html">项目</a></li>
+            <li><a href="../滚动/冬奥.html">运动健儿</a></li>
+            <li><a href="../社区打卡/community.html">社区打卡</a></li>
+            <li><a href="#">用户反馈</a></li>
+            <li><a href="./残奥.html" title="点击查看冬残奥会">冬残奥会</a></li>
+        </ul>
+    </div>
+    <div class="shell">
+
+        <div class="image" style="background-image: url('./图片/1.jpg');"></div>
+        <div class="heading">
+            <h1><span>第1金:</span>
+                武大靖 任子威
+                范可新 曲春雨 张雨婷
+
+            </h1>
+
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/冰墩墩.jpg" alt=""><span> 短道速滑混合团体接力 </span>
+
+                    <br>
+                    <p>2月5日晚，北京冬奥会短道速滑混合团体接力决赛在首都体育馆进行。由吉林省运动员武大靖领衔出战的中国队为中国体育代表团夺得首金！</p>
+                </h3>
+
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/2.jpg');"></div>
+        <div class="heading">
+            <h1>
+                <span>第2金:</span>
+                任子威
+            </h1>
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/冰墩墩.jpg" alt=""><span>短道速滑男子1000米</span>
+
+                    <br>
+                    <p>在北京冬奥会短道速滑男子1000米A组决赛中，中国选手任子威获得金牌！李文龙获得银牌，吉林省运动员武大靖名列第四。</p>
+                </h3>
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/3.jpg');"></div>
+        <div class="heading">
+            <h1>
+                <span>第3金:</span>
+                谷爱凌
+            </h1>
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/冰墩墩.jpg" alt=""><span>自由式滑雪女子大跳台</span>
+
+                    <br>
+                    <p>2月8日中午，年仅18岁的中国队运动员谷爱凌在冬奥会自由式滑雪女子大跳台项目决赛中，获得冠军。这也是中国代表团在本届冬奥会的第三枚金牌！</p>
+                </h3>
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/4.jpg');"></div>
+        <div class="heading">
+            <h1>
+                <span>第4金:</span>
+                高亭宇
+            </h1>
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/冰墩墩.jpg" alt=""><span>速度滑冰男子500米</span>
+
+                    <br>
+                    <p>在北京冬奥会速度滑冰男子500米决赛中，中国选手高亭宇以34秒32的成绩夺得冠军，创造新的奥运会纪录，为中国男子速度滑冰实现冬奥会金牌零的突破！</p>
+                </h3>
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/5.jpg');"></div>
+        <div class="heading">
+            <h1>
+                <span>第5金:</span>
+                徐梦桃
+
+            </h1>
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/冰墩墩.jpg" alt=""><span>速度滑冰男子500米</span>
+
+                    <br>
+                    <p>2月14日晚，在北京冬奥会自由式滑雪女子空中技巧决赛中，中国名将徐梦桃获得金牌，队友孔凡钰获得第六名。</p>
+                </h3>
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/6.jpg');"></div>
+        <div class="heading">
+            <h1>
+                <span>第6金:</span>
+                苏翊鸣
+            </h1>
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/冰墩墩.jpg" alt=""><span>单板滑雪男子大跳台</span>
+
+                    <br>
+                    <p>2月15日下午，北京冬奥会单板滑雪男子大跳台决赛，中国小将、从吉林省走出去的运动员苏翊鸣获得金牌。这是中国首次夺得该项目的冬奥会金牌！刷新冬奥会史上最佳战绩！</p>
+                </h3>
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/7.jpg');"></div>
+        <div class="heading">
+            <h1>
+                <span> 第7金:</span>
+                齐广璞
+            </h1>
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/冰墩墩.jpg" alt=""><span>自由式滑雪男子空中技巧</span>
+
+                    <br>
+                    <p>2月16日晚，北京冬奥会张家口赛区自由式滑雪男子空中技巧决赛在云顶滑雪公园收官，吉林省运动员齐广璞在比赛中发挥沉稳，为中国队再添一金！</p>
+                </h3>
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/8.jpg');"></div>
+        <div class="heading">
+            <h1>
+                <span>第8金:</span>
+                谷爱凌
+
+            </h1>
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/冰墩墩.jpg" alt=""><span>自由式滑雪女子U型场地技巧</span>
+
+                    <br>
+                    <p>2月18日，在刚刚结束的北京冬奥会自由式滑雪女子U型场地技巧决赛中，中国队运动员谷爱凌夺得冠军。至此，中国代表团在本届冬奥会上已收获8枚金牌。</p>
+                </h3>
+            </div>
+        </div>
+
+        <div class="image" style="background-image: url('./图片/9.jpg');"></div>
+        <div class="heading">
+            <h1>
+                <span>第9金:</span>
+                隋文静 韩聪
+            </h1>
+
+        </div>
+        <div class="test">
+            <div class="title">
+                <h3><img src="./图片/冰墩墩.jpg" alt=""><span>花样滑冰双人滑</span>
+
+                    <br>
+                    <p>在2月19日晚上举行的北京冬奥会花样滑冰双人滑中，隋文静/韩聪以239.88的总成绩获得金牌！为中国队墒下第九金！</p>
+                </h3>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

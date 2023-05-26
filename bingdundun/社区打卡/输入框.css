@@ -1,0 +1,51 @@
+.get textarea {
+    font-size: 15px;
+    font-family: "等线";
+    line-height: 20px;
+    padding-top: 5px;
+}
+
+.get button {
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    text-indent: 3px;
+    transition: 0.5s;
+
+}
+
+.get button:hover {
+    color: red;
+    transform: scale(1.1);
+}
+
+.get ul {
+    padding-inline-start: 0px;
+}
+
+.get ul li {
+    background-color: white;
+    height: 40px;
+    list-style-type: none;
+    background-image: url(./社区图片/冰墩墩.png);
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    font-size: 18px;
+    font-family: "宋体";
+    padding-left: 40px;
+    line-height: 40px;
+    border: 1px white solid;
+    margin-left: 0px;
+}
+
+.get ul li::before {
+    content: ":";
+}
+
+.get ul li a {
+    text-decoration: none;
+    color: red;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 30px;
+}

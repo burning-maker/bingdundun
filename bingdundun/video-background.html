@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./video-background.css">
+    <link rel="stylesheet" href="./框架1-4/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./登录/logn.css">
+</head>
+<style>
+    /* .muea ul li:last-of-type {}
+
+    .inner-ul {
+        position: absolute;
+        background-color: black;
+        width: 250px;
+        right: 210px;
+        bottom: 70px;
+    }
+
+    .inner-ul li {
+        float: left;
+        width: 48%;
+        margin: 2.5px 2.5px;
+        object-fit: fill;
+    }
+
+    .inner-ul li img {
+        width: 100%;
+        height: 48%;
+    }
+    .sanjiao{
+        position:absolute;
+        width: 0px;
+        height: 0px;
+        border:3px solid transparent;
+    } */
+</style>
+
+<body>
+    <section class="showcase">
+        <header>
+            <div class="logo">
+                <i class="iconfont icon-Fill_dangqi"></i>
+            </div>
+            <div class="toggle">
+
+            </div>
+        </header>
+        <video autoplay loop class="video-background" muted plays-inline>
+            <source src="./2.mp4" type="video/mp4">
+        </video>
+        <div class="overflay"></div>
+        <div class="text">
+            <h2>北京冬奥，织梦未来</h2>
+            <h3>我和冰雪运动有个约</h3>
+            <p>2022年北京冬奥会，相信大家对冰雪运动肯定充满好奇,冰墩墩雪蓉荣向你发起邀约：一起了解冰雪运动吧！</p>
+            <a type="_blank" href="./框架1-4/1.html">HERE WE GO!</a>
+        </div>
+
+        <ul class="log_on">
+            <li><a href=""><i class="iconfont icon-weixin"></i></a></li>
+            <li><a href=""><i class="iconfont icon-qq"></i></a></li>
+            <li><a href=""><i class="iconfont icon-weibo"></i></a></li>
+        </ul>
+        <!-- <ul class="inner-ul">
+            <li><img src="./图片图标/雯娜.jpg" alt=""></li>
+            <li><img src="./图片图标/网仪.jpg" alt=""></li>
+            <li><img src="./图片图标/可欣.jpg" alt=""></li>
+            <li><img src="./图片图标/佳豪.jpg" alt=""></li>
+            <div class="sanjiao"></div>
+        </ul> -->
+    </section>
+    <div class="muea">
+        <ul>
+            <li><a href="javascript:void(0)" onclick="ac()" class="a-login">登录</a></li>
+
+            <li><a href="./框架1-4/1.html" type="_blank">项目</a></li>
+
+            <li><a href="./社区打卡/community.html" type="_blank">社区</a></li>
+            <!-- 写一个弹窗可以弹出来登录页面 -->
+            <li><a href="./滚动/冬奥.html" type="_blank">运动健儿</a></li>
+            <li><a href="https://www.beijing2022.cn/olympics.htm">了解更多</a></li>
+            <li><a href="">联系我们</a></li>
+        </ul>
+    </div>
+    <div class="wrap">
+        <div class="form">
+            <div class="buttom-close" onclick="ac()"></div>
+            <!-- 左边动态效果 -->
+            <div class="left">
+                <img src="./登录/登录1.jpg" width="100%" height="100%"></img>
+            </div>
+            <!-- 右边登录页面 -->
+            <div class="right">
+                <div class="right-con">
+                    <h1>NEW HERE SIGN UP</h1>
+                    <h3>NAME</h3>
+                    <input class="test" type="text">
+                    <h3>EMAIL</h3>
+                    <input class="test" type="text">
+                    <h3>PASSWORD</h3>
+                    <input class="test" type="password">
+                    <input class="btn" type="submit" value="LOGIN">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        //先绑定按钮
+        const login = document.querySelector('.a-login')
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+        const wrap = document.querySelector('.wrap');
+        //加上点击事件
+        menuToggle.addEventListener('click', () => {
+            //如果里面有active就去掉，没有就加上。
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+            wrap.classList.toggle('active');
+        })
+        login.addEventListener('click', () => {
+            //如果里面有active就去掉，没有就加上。
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+            wrap.classList.toggle('active');
+        })
+        function ac() {
+            document.querySelector('.wrap .form').classList.toggle('active')
+            document.querySelector('.wrap').classList.toggle('show')
+        }
+    </script>
+</body>
+
+</html>

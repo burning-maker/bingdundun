@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="CSS/333.css" rel="stylesheet">
+  <link rel="stylesheet" href="./leftright/iconfont.css">
+  <link rel="stylesheet" href="../导航栏/111.css">
+  <title>我和冰雪运动有个约</title>
+
+  <style>
+    .a {
+      height: 550px;
+      width: 100%;
+      position: relative;
+      perspective: 1600px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .b {
+      width: 400px;
+      height: 300px;
+      position: absolute;
+      transform-style: preserve-3d;
+      animation: a 10s infinite cubic-bezier(.7, 0, .17, 1);
+    }
+
+    .b div {
+      position: absolute;
+      background-size: cover;
+      opacity: .9;
+      width: 400px;
+      height: 300px;
+      transform: rotateY(calc(var(--i)*72deg)) translateZ(600px);
+    }
+
+    @keyframes a {
+      0% {
+        transform: translateZ(-100px) rotateY(0);
+      }
+
+      20% {
+        transform: translateZ(-100px) rotateY(-72deg);
+      }
+
+      40% {
+        transform: translateZ(-100px) rotateY(-144deg);
+      }
+
+      60% {
+        transform: translateZ(-100px) rotateY(-216deg);
+      }
+
+      80% {
+        transform: translateZ(-100px) rotateY(-288deg);
+      }
+
+      100% {
+        transform: translateZ(-100px) rotateY(-360deg);
+      }
+    }
+
+    .c {
+      background-image: url("../image/开幕式.png");
+      background-size: cover;
+    }
+
+    .d {
+      background-image: url("../image/冰墩墩雪融容.jpg");
+      background-size: cover;
+    }
+
+    .e {
+      background-image: url("../image/雪花.jpg");
+      background-size: cover;
+    }
+
+    .f {
+      background-image: url("../image/logo.jpg");
+      background-size: cover;
+    }
+
+    .g {
+      background-image: url("../image/闭幕式.jpg");
+      background-size: cover;
+    }
+
+    .menu li:last-of-type {
+      border: 1px white solid;
+      height: 40px;
+      line-height: 40px;
+      position: absolute;
+      left: -500px;
+      top: -10px;
+      background-color: rgb(126, 215, 242, 0.8);
+      transition: 0.5s;
+    }
+
+    .menu li:last-of-type:hover {
+      transform: scale(1.1);
+    }
+
+    .menu li:nth-of-type(2) a {
+      color: red;
+      border-bottom: 1px red solid;
+    }
+
+    .select-img ul li:nth-of-type(10) .mask {
+      top: 0px;
+    }
+
+    .select-img ul {
+      left: -900px;
+    }
+
+    .select-img ul.active {
+      left: 65px;
+    }
+
+    #left {
+      left: 175px;
+    }
+
+    #right {
+      right: 150px;
+    }
+  </style>
+
+</head>
+
+<div class="outer">
+
+  <body>
+    <nav class="nav">
+      <input type="checkbox" id="menu_btn">
+      <label for="menu_btn" class="menu-btn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </label>
+      <div class="wrapper">
+        <ul class="menu">
+          <li><a href="../video-background.html">首页</a></li>
+          <li><a href="../框架1-4/1.html">项目</a></li>
+          <li><a href="../滚动/冬奥.html">运动健儿</a></li>
+          <li><a href="../社区打卡/community.html">社区打卡</a></li>
+
+          <li><a href="#">用户反馈</a></li>
+          <li><a href="../雪容融页面/21.html" title="点击了解残奥会">冬残奥会</a>
+        </ul>
+      </div>
+    </nav>
+    <div class="a">
+      <div class="b">
+        <div class="c" style="--i:0"></div>
+        <div class="d" style="--i:1"></div>
+        <div class="e" style="--i:2"></div>
+        <div class="f" style="--i:3"></div>
+        <div class="g" style="--i:4"></div>
+      </div>
+      <div id="here"></div>
+    </div>
+    <div class="box1">
+      <div class="iconfont icon-youjiantou" id="left" onclick="ac()">
+      </div>
+      <div class="iconfont icon-zuojiantou" id="right" onclick="ac()"></div>
+      <section class="select-img">
+
+        <ul>
+          <li>
+            <img src="./冰墩墩图片/短道速滑.jpg">
+            <div class="mask">
+              <a href="1.html#here">
+                <p>短道速滑</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./冰墩墩图片/速度滑冰.jpg">
+            <div class="mask">
+              <a href="2.html#here">
+                <p>速度滑冰</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./冰墩墩图片/花样滑冰.jpg">
+            <div class="mask">
+              <a href="3.html#here">
+                <p>花样滑冰</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./冰墩墩图片/冰球.jpg">
+            <div class="mask">
+              <a href="4.html#here">
+                <p>冰球</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./冰墩墩图片/冰壶.jpg">
+            <div class="mask">
+              <a href="5.html#here">
+                <p>冰壶</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./冰墩墩图片/雪车.jpg">
+            <div class="mask">
+              <a href="6.html#here">
+                <p>雪车</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./冰墩墩图片/钢架雪车.jpg">
+            <div class="mask">
+              <a href="7.html#here">
+                <p>钢架雪车</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./冰墩墩图片/雪橇.jpg">
+            <div class="mask">
+              <a href="8.html#here">
+                <p>雪橇</p>
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <img src="./冰墩墩图片/冬季两项.jpg">
+            <div class="mask">
+              <a href="10.html#here">
+                <p>冬季两项</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./冰墩墩图片/高山滑雪.jpg">
+            <div class="mask">
+              <a href="11.html#here">
+                <p>高山滑雪</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./冰墩墩图片/自由式滑雪.jpg">
+            <div class="mask">
+              <a href="12.html#here">
+                <p>自由式滑雪</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./冰墩墩图片/单板滑雪.jpg">
+            <div class="mask">
+              <a href="13.html#here">
+                <p>单板滑雪</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./冰墩墩图片/跳台滑雪.jpg">
+            <div class="mask">
+              <a href="14.html#here">
+                <p>跳台滑雪</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./冰墩墩图片/越野滑雪.jpg">
+            <div class="mask">
+              <a href="15.html#here">
+                <p>越野滑雪</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./冰墩墩图片/北欧两项.jpg">
+            <div class="mask">
+              <a href="16.html#here">
+                <p>北欧两项</p>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <script>
+        function ac() {
+          document.querySelector('.select-img ul').classList.toggle('active')
+        }
+      </script>
+    </div>
+
+
+    <section class="center">
+      <!-- 项目介绍 -->
+      <span>项目介绍:</span>
+      <div class="box" id="intro-box">
+        <div class="glass"></div>
+        <div class="content">
+          <h2><img src="image/高山滑雪.png"></h2>
+          <p>
+            高山滑雪有“冬奥会王冠上的珍珠”的美誉。2022年北京冬奥会的高山滑雪比赛将在全新修建的国家高山滑雪中心举行，将会产生11块金牌。冬奥会高山滑雪包括六个竞赛项目：滑降、超级大回转、大回转、回转、全能赛以及混合团体平行回转。
+          </p>
+        </div>
+      </div>
+
+      <span>精彩瞬间:</span>
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022022800219000" target="_blank">
+          <div class="content">
+            <h2><img src="image/11.1.webp"></h2>
+            <p>
+              荷兰残疾人高山滑雪队教练：北京冬残奥会的设施是最好的！
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022022700284700" target="_blank">
+          <div class="content">
+            <h2><img src="image/11.2.webp"></h2>
+            <p>
+              国家高山滑雪中心夜晚施工更换景观标识
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022022000288300" target="_blank">
+          <div class="content">
+            <h2><img src="image/11.3.webp"></h2>
+            <p>
+              奥地利队夺得高山滑雪混合团体金牌
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022022000186900" target="_blank">
+          <div class="content">
+            <h2><img src="image/11.4.webp"></h2>
+            <p>
+              奥地利队获得北京冬奥会高山滑雪混合团体冠军
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022021800561800" target="_blank">
+          <div class="content">
+            <h2><img src="image/11.5.webp"></h2>
+            <p>
+              北京冬奥高山滑雪竞速类项目成功完赛 技术官员：中国有能力承办超大型高山滑雪赛事
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022021800562100" target="_blank">
+          <div class="content">
+            <h2><img src="image/11.6.webp"></h2>
+            <p>
+              [第二赛场]高山滑雪中心颁奖团队全力保障颁奖仪式顺利进行
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </body>
+</div>
+
+</html>

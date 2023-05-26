@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="CSS/333.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../iconfont/iconfont.css" />
+  <link rel="stylesheet" href="../导航栏/111.css">
+  <title>残奥冰球</title>
+
+  <style>
+    .a {
+      height: 550px;
+      width: 100%;
+      position: relative;
+      perspective: 1600px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .b {
+      width: 400px;
+      height: 300px;
+      position: absolute;
+      transform-style: preserve-3d;
+      animation: a 10s infinite cubic-bezier(0.7, 0, 0.17, 1);
+    }
+
+    .b div {
+      position: absolute;
+      background-size: cover;
+      opacity: 0.9;
+      width: 400px;
+      height: 300px;
+      transform: rotateY(calc(var(--i) * 72deg)) translateZ(600px);
+    }
+
+    @keyframes a {
+      0% {
+        transform: translateZ(-100px) rotateY(0);
+      }
+
+      20% {
+        transform: translateZ(-100px) rotateY(-72deg);
+      }
+
+      40% {
+        transform: translateZ(-100px) rotateY(-144deg);
+      }
+
+      60% {
+        transform: translateZ(-100px) rotateY(-216deg);
+      }
+
+      80% {
+        transform: translateZ(-100px) rotateY(-288deg);
+      }
+
+      100% {
+        transform: translateZ(-100px) rotateY(-360deg);
+      }
+    }
+
+    .c {
+      background-image: url("image/开幕式.png");
+      background-size: cover;
+    }
+
+    .d {
+      background-image: url("image/冰墩墩雪融容.jpg");
+      background-size: cover;
+    }
+
+    .e {
+      background-image: url("image/雪花.jpg");
+      background-size: cover;
+    }
+
+    .f {
+      background-image: url("image/logo.jpg");
+      background-size: cover;
+    }
+
+    .g {
+      background-image: url("image/闭幕式.jpg");
+      background-size: cover;
+    }
+
+    .menu li:last-of-type {
+      border: 1px white solid;
+      height: 40px;
+      line-height: 40px;
+      position: absolute;
+      left: -500px;
+      top: -10px;
+      background-color: rgb(126, 215, 242, 0.8);
+      transition: 0.5s;
+    }
+
+    .menu li:last-of-type:hover {
+      transform: scale(1.1);
+    }
+
+    .menu li:nth-of-type(2) a {
+
+      color: red;
+      border-bottom: 1px red solid;
+    }
+
+    .select-img ul li:nth-of-type(2) .mask {
+      top: 0px;
+    }
+  </style>
+</head>
+<div class="outer">
+
+  <body>
+    <nav class="nav">
+      <input type="checkbox" id="menu_btn">
+      <label for="menu_btn" class="menu-btn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </label>
+      <div class="wrapper">
+        <ul class="menu">
+          <li><a href="../video-background.html">首页</a></li>
+          <li><a href="../雪容融页面/21.html">项目</a></li>
+          <li><a href="../滚动/残奥.html">运动健儿</a></li>
+          <li><a href="../社区打卡/community.html">社区打卡</a></li>
+          <li><a href="#">用户反馈</a></li>
+          <li><a href="../框架1-4/1.html" title="点击了解冬奥会">冬奥会</a>
+        </ul>
+      </div>
+    </nav>
+    <div class="a">
+      <div class="b">
+        <div class="c" style="--i: 0"></div>
+        <div class="d" style="--i: 1"></div>
+        <div class="e" style="--i: 2"></div>
+        <div class="f" style="--i: 3"></div>
+        <div class="g" style="--i: 4"></div>
+      </div>
+
+      <div id="here"></div>
+    </div>
+
+    <section class="select-img">
+      <ul>
+        <li>
+          <img src="雪容融图片/残奥冬季两项.jpg" />
+          <div class="mask">
+            <a href="21.html#here">
+              <p>残奥冬季两项</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <img src="雪容融图片/残奥冰球.jpg" />
+          <div class="mask">
+            <a href="24.html#here">
+              <p>残奥冰球</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <img src="雪容融图片/残奥单板滑雪.jpg" />
+          <div class="mask">
+            <a href="26.html#here">
+              <p>残奥单板滑雪</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <img src="雪容融图片/残奥越野滑雪.jpg" />
+          <div class="mask">
+            <a href="22.html#here">
+              <p>残奥越野滑雪</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <img src="雪容融图片/残奥高山滑雪.jpg" />
+          <div class="mask">
+            <a href="23.html#here">
+              <p>残奥高山滑雪</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <img src="雪容融图片/轮椅冰壶.jpg" />
+          <div class="mask">
+            <a href="25.html#here">
+              <p>轮椅冰壶</p>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="center">
+      <!-- 项目介绍 -->
+      <span>项目介绍:</span>
+      <div class="box" id="intro-box">
+        <div class="glass"></div>
+        <div class="content">
+          <h2><img src="image/残奥冰球.png" style="padding-top: 20px" /></h2>
+          <p style="padding-top: 15px; text-indent: 20px">
+            残奥冰球（Para Ice
+            Hockey，冰橇冰球），冰上运动，在1994年利勒哈默尔残奥会上列为正式比赛项目。
+            该项目选手都是下肢有残疾的运动员，坐在冰橇的特制座椅上参加比赛。残奥会冰球比赛场地规格与冬奥会完全一致，比赛规则基本相同。共有8支参赛队伍，每队可由15名男队员参赛，或者最多16名队员参赛，其中至少包含一名女队员。双方各派出包括守门员在内的6名队员上场，比赛中可随时换人，且没有名额和次数限制。
+          </p>
+        </div>
+      </div>
+
+      <span>精彩瞬间:</span>
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/paralympics/wog.htm?cmsid=EYS2022031601421400" target="_blank">
+          <div class="content">
+            <h2><img src="image/241.webp" /></h2>
+            <p>意大利运动员：四年后，期待更多残疾青年参与冰球运动</p>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/paralympics/wog.htm?cmsid=EYS2022031300280000" target="_blank">
+          <div class="content">
+            <h2><img src="image/242.webp" /></h2>
+            <p>
+              中国残奥冰球队现场高歌《歌唱祖国》庆祝摘铜 于静：铜牌不是终点
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/paralympics/wog.htm?cmsid=EYS2022031300232100" target="_blank">
+          <div class="content">
+            <h2><img src="image/243.webp" /></h2>
+            <p>美国队获得北京2022年冬残奥会残奥冰球冠军</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/paralympics/wog.htm?cmsid=EYS2022031203473100" target="_blank">
+          <div class="content">
+            <h2><img src="image/244.webp" /></h2>
+            <p>“00后”冬残奥小将的冰球人生</p>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/paralympics/wog.htm?cmsid=EYS2022031000428000" target="_blank">
+          <div class="content">
+            <h2><img src="image/245.webp" /></h2>
+            <p>
+              中国残奥冰球队四强挑战卫冕冠军美国队
+              汪之栋：把每场比赛当成一次机会
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/paralympics/wog.htm?cmsid=EYS2022030900870900" target="_blank">
+          <div class="content">
+            <h2><img src="image/246.webp" /></h2>
+            <p>残奥冰球小组赛B组：中国队对阵意大利队</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </body>
+</div>
+
+</html>

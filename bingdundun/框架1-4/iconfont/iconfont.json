@@ -1,0 +1,86 @@
+{
+  "id": "3373907",
+  "name": "冰墩墩项目",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "316182",
+      "name": "top",
+      "font_class": "15",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "316183",
+      "name": "down",
+      "font_class": "16",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "1311652",
+      "name": "首页三条线",
+      "font_class": "shouyesantiaoxian",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "22894470",
+      "name": "三条线",
+      "font_class": "santiaoxian",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "7196612",
+      "name": "party_flag",
+      "font_class": "Fill_dangqi",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "25874194",
+      "name": "党",
+      "font_class": "dangqi1",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "386475",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "2742669",
+      "name": "微博",
+      "font_class": "weibo",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    },
+    {
+      "icon_id": "23639352",
+      "name": "多选",
+      "font_class": "Union-1",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "25599172",
+      "name": "党旗",
+      "font_class": "dangqi",
+      "unicode": "e80f",
+      "unicode_decimal": 59407
+    },
+    {
+      "icon_id": "27365232",
+      "name": "qq",
+      "font_class": "qq",
+      "unicode": "ec19",
+      "unicode_decimal": 60441
+    }
+  ]
+}

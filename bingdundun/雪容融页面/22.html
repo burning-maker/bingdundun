@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="CSS/333.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../iconfont/iconfont.css" />
+  <link rel="stylesheet" href="../导航栏/111.css">
+  <title>残奥越野滑雪</title>
+
+  <style>
+    .a {
+      height: 550px;
+      width: 100%;
+      position: relative;
+      perspective: 1600px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .b {
+      width: 400px;
+      height: 300px;
+      position: absolute;
+      transform-style: preserve-3d;
+      animation: a 10s infinite cubic-bezier(0.7, 0, 0.17, 1);
+    }
+
+    .b div {
+      position: absolute;
+      background-size: cover;
+      opacity: 0.9;
+      width: 400px;
+      height: 300px;
+      transform: rotateY(calc(var(--i) * 72deg)) translateZ(600px);
+    }
+
+    @keyframes a {
+      0% {
+        transform: translateZ(-100px) rotateY(0);
+      }
+
+      20% {
+        transform: translateZ(-100px) rotateY(-72deg);
+      }
+
+      40% {
+        transform: translateZ(-100px) rotateY(-144deg);
+      }
+
+      60% {
+        transform: translateZ(-100px) rotateY(-216deg);
+      }
+
+      80% {
+        transform: translateZ(-100px) rotateY(-288deg);
+      }
+
+      100% {
+        transform: translateZ(-100px) rotateY(-360deg);
+      }
+    }
+
+    .c {
+      background-image: url("image/开幕式.png");
+      background-size: cover;
+    }
+
+    .d {
+      background-image: url("image/冰墩墩雪融容.jpg");
+      background-size: cover;
+    }
+
+    .e {
+      background-image: url("image/雪花.jpg");
+      background-size: cover;
+    }
+
+    .f {
+      background-image: url("image/logo.jpg");
+      background-size: cover;
+    }
+
+    .g {
+      background-image: url("image/闭幕式.jpg");
+      background-size: cover;
+    }
+
+    .menu li:last-of-type {
+      border: 1px white solid;
+      height: 40px;
+      line-height: 40px;
+      position: absolute;
+      left: -500px;
+      top: -10px;
+      background-color: rgb(126, 215, 242, 0.8);
+      transition: 0.5s;
+    }
+
+    .menu li:last-of-type:hover {
+      transform: scale(1.1);
+    }
+
+    .menu li:nth-of-type(2) a {
+
+      color: red;
+      border-bottom: 1px red solid;
+    }
+
+    .select-img ul li:nth-of-type(4) .mask {
+      top: 0px;
+    }
+  </style>
+</head>
+<div class="outer">
+  <nav class="nav">
+    <input type="checkbox" id="menu_btn">
+    <label for="menu_btn" class="menu-btn">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </label>
+    <div class="wrapper">
+      <ul class="menu">
+        <li><a href="../video-background.html">首页</a></li>
+        <li><a href="../雪容融页面/21.html">项目</a></li>
+        <li><a href="../滚动/残奥.html">运动健儿</a></li>
+        <li><a href="../社区打卡/community.html">社区打卡</a></li>
+        <li><a href="#">用户反馈</a></li>
+        <li><a href="../框架1-4/1.html" title="点击了解冬奥会">冬奥会</a>
+      </ul>
+    </div>
+  </nav>
+
+  <body>
+    <div class="a">
+      <div class="b">
+        <div class="c" style="--i: 0"></div>
+        <div class="d" style="--i: 1"></div>
+        <div class="e" style="--i: 2"></div>
+        <div class="f" style="--i: 3"></div>
+        <div class="g" style="--i: 4"></div>
+      </div>
+
+      <div id="here"></div>
+    </div>
+
+    <section class="select-img">
+      <ul>
+        <li>
+          <img src="雪容融图片/残奥冬季两项.jpg" />
+          <div class="mask">
+            <a href="21.html#here">
+              <p>残奥冬季两项</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <img src="雪容融图片/残奥冰球.jpg" />
+          <div class="mask">
+            <a href="24.html#here">
+              <p>残奥冰球</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <img src="雪容融图片/残奥单板滑雪.jpg" />
+          <div class="mask">
+            <a href="26.html#here">
+              <p>残奥单板滑雪</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <img src="雪容融图片/残奥越野滑雪.jpg" />
+          <div class="mask">
+            <a href="22.html#here">
+              <p>残奥越野滑雪</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <img src="雪容融图片/残奥高山滑雪.jpg" />
+          <div class="mask">
+            <a href="23.html#here">
+              <p>残奥高山滑雪</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <img src="雪容融图片/轮椅冰壶.jpg" />
+          <div class="mask">
+            <a href="25.html#here">
+              <p>轮椅冰壶</p>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="center">
+      <!-- 项目介绍 -->
+      <span>项目介绍:</span>
+      <div class="box" id="intro-box">
+        <div class="glass"></div>
+        <div class="content">
+          <h2>
+            <img src="image/残奥越野滑雪.png" style="padding-top: 25px" />
+          </h2>
+          <p style="padding-top: 25px; text-indent: 20px">
+            残奥越野滑雪（Para Cross-Country
+            Skiing），雪上项目，在1976年第一届瑞典恩舍尔兹维克冬季残奥会上被正式列为冬残奥项目。
+            该项目运动员为肢体残疾或盲人、视障，根据功能损伤不同，运动员可以采用站姿滑雪，也可以采用坐姿滑雪，在一对滑雪板上装备一个椅子，运动员坐在椅子上滑行。视障运动员与一名视力正常的引导员一起参加比赛。男女运动员采用传统技术或自由式技术在短距离、中距离和长距离进行比赛或参加团队接力。
+          </p>
+        </div>
+      </div>
+
+      <span>精彩瞬间:</span>
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/paralympics/wog.htm?cmsid=EYS2022031300215100" target="_blank">
+          <div class="content">
+            <h2><img src="image/221.webp" /></h2>
+            <p>乌克兰队获得残奥越野滑雪公开接力4×2.5公里冠军</p>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/paralympics/wog.htm?cmsid=EYS2022031300148600" target="_blank">
+          <div class="content">
+            <h2><img src="image/222.webp" /></h2>
+            <p>美国队获得残奥越野滑雪混合接力4×2.5公里冠军</p>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/paralympics/wog.htm?cmsid=EYS2022031205188000" target="_blank">
+          <div class="content">
+            <h2><img src="image/223.webp" /></h2>
+            <p>王晨阳：金牌是我最重要的里程碑 心里有太多开心的事</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/paralympics/wog.htm?cmsid=EYS2022031205007800" target="_blank">
+          <div class="content">
+            <h2><img src="image/224.webp" /></h2>
+            <p>蔡佳云：剪个头发 帅帅气气地领奖</p>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/paralympics/wog.htm?cmsid=EYS2022031204356800" target="_blank">
+          <div class="content">
+            <h2><img src="image/225.webp" /></h2>
+            <p>中国选手杨洪琼获得残奥越野滑雪女子中距离（坐姿）冠军</p>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <div class="glass"></div>
+        <a href="https://www.beijing2022.cn/paralympics/wog.htm?cmsid=EYS2022031204349500" target="_blank">
+          <div class="content">
+            <h2><img src="image/226.webp" /></h2>
+            <p>中国选手毛忠武获得残奥越野滑雪男子中距离（坐姿）冠军</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </body>
+</div>
+
+</html>
